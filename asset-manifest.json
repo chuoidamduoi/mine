@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/mine/static/css/main.073c9b0a.css",
-    "main.js": "/mine/static/js/main.6b1733e0.js",
-    "static/js/787.8c0d2600.chunk.js": "/mine/static/js/787.8c0d2600.chunk.js",
-    "static/media/logo.svg": "/mine/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/mine/static/css/main.267cbfcd.chunk.css",
+    "main.js": "/mine/static/js/main.8b756461.chunk.js",
+    "main.js.map": "/mine/static/js/main.8b756461.chunk.js.map",
+    "runtime-main.js": "/mine/static/js/runtime-main.e0447aa9.js",
+    "runtime-main.js.map": "/mine/static/js/runtime-main.e0447aa9.js.map",
+    "static/js/2.8d3a091a.chunk.js": "/mine/static/js/2.8d3a091a.chunk.js",
+    "static/js/2.8d3a091a.chunk.js.map": "/mine/static/js/2.8d3a091a.chunk.js.map",
     "index.html": "/mine/index.html",
-    "main.073c9b0a.css.map": "/mine/static/css/main.073c9b0a.css.map",
-    "main.6b1733e0.js.map": "/mine/static/js/main.6b1733e0.js.map",
-    "787.8c0d2600.chunk.js.map": "/mine/static/js/787.8c0d2600.chunk.js.map"
+    "precache-manifest.9f2c33688320afa68f0f2f02371f11ca.js": "/mine/precache-manifest.9f2c33688320afa68f0f2f02371f11ca.js",
+    "service-worker.js": "/mine/service-worker.js",
+    "static/css/main.267cbfcd.chunk.css.map": "/mine/static/css/main.267cbfcd.chunk.css.map",
+    "static/js/2.8d3a091a.chunk.js.LICENSE.txt": "/mine/static/js/2.8d3a091a.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/mine/static/media/illustration-section-02.63d0555d.svg",
+    "static/media/feature-tile-icon-01.svg": "/mine/static/media/feature-tile-icon-01.0f9928d7.svg",
+    "static/media/feature-tile-icon-02.svg": "/mine/static/media/feature-tile-icon-02.bd39f304.svg",
+    "static/media/feature-tile-icon-03.svg": "/mine/static/media/feature-tile-icon-03.66f37ba5.svg",
+    "static/media/feature-tile-icon-04.svg": "/mine/static/media/feature-tile-icon-04.836acd10.svg",
+    "static/media/feature-tile-icon-05.svg": "/mine/static/media/feature-tile-icon-05.fa9ba00b.svg",
+    "static/media/feature-tile-icon-06.svg": "/mine/static/media/feature-tile-icon-06.6a177696.svg",
+    "static/media/features-split-image-01.png": "/mine/static/media/features-split-image-01.d9cb99ce.png",
+    "static/media/features-split-image-02.png": "/mine/static/media/features-split-image-02.3c569239.png",
+    "static/media/features-split-image-03.png": "/mine/static/media/features-split-image-03.87e4d053.png",
+    "static/media/logo.svg": "/mine/static/media/logo.2810a88b.svg",
+    "static/media/video-placeholder.jpg": "/mine/static/media/video-placeholder.a622fc5d.jpg"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.6b1733e0.js"
+    "static/js/runtime-main.e0447aa9.js",
+    "static/js/2.8d3a091a.chunk.js",
+    "static/css/main.267cbfcd.chunk.css",
+    "static/js/main.8b756461.chunk.js"
   ]
 }
