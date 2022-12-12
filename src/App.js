@@ -24,7 +24,8 @@ const App = () => {
   let location = useLocation();
 
   useEffect(() => {
-    const page = location.pathname;
+    let page = location.pathname;
+    page = page.replace("/mine", "")
     document.body.classList.add('is-loaded')
     childRef.current.init();
     trackPage(page);
@@ -36,7 +37,7 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/mine" component={Home} layout={LayoutDefault} />
         </Switch>
       )} />
   );
