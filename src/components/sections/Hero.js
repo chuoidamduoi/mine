@@ -1,18 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
-import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
+import { SectionSplitProps } from '../../utils/SectionProps';
+import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CakeIcon from '@mui/icons-material/Cake';
 
 const propTypes = {
-  ...SectionProps.types
+  ...SectionSplitProps.types
 }
 
 const defaultProps = {
-  ...SectionProps.defaults
+  ...SectionSplitProps.defaults
 }
+
+
 
 const Hero = ({
   className,
@@ -22,23 +28,15 @@ const Hero = ({
   bottomDivider,
   hasBgColor,
   invertColor,
+  invertMobile,
+  invertDesktop,
+  alignTop,
+  imageFill,
   ...props
 }) => {
 
-  const [videoModalActive, setVideomodalactive] = useState(false);
-
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  }
-
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  }   
-
   const outerClasses = classNames(
-    'hero section center-content',
+    'features-split section',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -47,59 +45,83 @@ const Hero = ({
   );
 
   const innerClasses = classNames(
-    'hero-inner section-inner',
+    'hero features-split-inner section-inner',
     topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
+
+  const splitClasses = classNames(
+    'split-wrap',
+    invertMobile && 'invert-mobile',
+    invertDesktop && 'invert-desktop',
+    alignTop && 'align-top'
+  );
+
+  const sectionHeader = {
+    title: 'Workflow that just works',
+    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+  };
 
   return (
     <section
       {...props}
       className={outerClasses}
     >
-      <div className="container-sm">
+      <div className="container">
         <div className={innerClasses}>
-          <div className="hero-content">
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Landing template for <span className="text-color-primary">startups</span>
-            </h1>
-            <div className="container-xs">
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.
-                </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
-                    Get started
-                    </Button>
-                  <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
-                    View on Github
-                    </Button>
-                </ButtonGroup>
+          <div className={splitClasses}>
+
+            <div className="split-item">
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../assets/images/icon-user-default.png')}
+                  alt="Features split 02"
+                  width={200}
+                  height={200} />
               </div>
+              <div className="split-item-content center-content-mobile reveal-from-right " data-reveal-container=".split-item">
+                <h3 className="mt-0 mb-12">
+                  NGUYEN NGUYEN
+                </h3>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  Inter
+                </div>
+                <Box sx={{ flexGrow: 1 }}>
+                  <Grid container spacing={2}>
+                    <Grid item xs={6} className="flex">
+                      <MailOutlineOutlinedIcon />
+                      <p className="m-0"> 01/01/2001</p>
+                    </Grid>
+                    <Grid item xs={6} className="flex" >
+                      <PhoneAndroidIcon /> +84 098 678 345
+                    </Grid>
+                    <Grid item xs={6} className="flex">
+                      <LocationOnIcon />
+                      <p className="m-0"> District 1, HCMC </p>
+                    </Grid>
+                    <Grid item xs={6} className="flex">
+                      <CakeIcon />
+                      <p className="m-0"> 2000</p>
+                    </Grid>
+                  </Grid>
+                </Box>
+
+              </div>
+
             </div>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
+            </p>
+
+
+
           </div>
-          <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('./../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
-          </div>
-          <Modal
-            id="video-modal"
-            show={videoModalActive}
-            handleClose={closeModal}
-            video="https://player.vimeo.com/video/174002812"
-            videoTag="iframe" />
         </div>
       </div>
     </section>
