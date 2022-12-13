@@ -1,43 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7650b1da763634499306a6f6e0777c5",
+    "revision": "b6a40bf253dd494f80a3b8446d6dda8f",
     "url": "/mine/index.html"
   },
   {
-    "revision": "4d734aed14361baf0971",
-    "url": "/mine/static/css/main.ae284e15.chunk.css"
+    "revision": "098fe8da7850734756a4",
+    "url": "/mine/static/css/main.7fc4cde9.chunk.css"
   },
   {
-    "revision": "64df26ed4145423c6d43",
-    "url": "/mine/static/js/2.68064ee3.chunk.js"
+    "revision": "974ebac1db609621d855",
+    "url": "/mine/static/js/2.069ca75d.chunk.js"
   },
   {
     "revision": "191f3b144b08e5ca0f08d443b656125e",
-    "url": "/mine/static/js/2.68064ee3.chunk.js.LICENSE.txt"
+    "url": "/mine/static/js/2.069ca75d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d734aed14361baf0971",
-    "url": "/mine/static/js/main.e296b491.chunk.js"
+    "revision": "098fe8da7850734756a4",
+    "url": "/mine/static/js/main.08645553.chunk.js"
   },
   {
     "revision": "52783782bb4dbcffae3f",
     "url": "/mine/static/js/runtime-main.e0447aa9.js"
   },
   {
+    "revision": "dd60fa2b9a93cc612db4bfd6e9d6927a",
+    "url": "/mine/static/media/Harvard_University.dd60fa2b.png"
+  },
+  {
+    "revision": "ae3daa0111596c9419ecfef44ae2227d",
+    "url": "/mine/static/media/PTIT_University.ae3daa01.png"
+  },
+  {
     "revision": "3ce357e71a836a86691b904396a8955c",
     "url": "/mine/static/media/cta-illustration.3ce357e7.svg"
-  },
-  {
-    "revision": "d9cb99ceb6a66250792ed78f5765325b",
-    "url": "/mine/static/media/features-split-image-01.d9cb99ce.png"
-  },
-  {
-    "revision": "3c569239f88160018f79029ba5dc227d",
-    "url": "/mine/static/media/features-split-image-02.3c569239.png"
-  },
-  {
-    "revision": "87e4d053756c60c9f421195d8eafdbfe",
-    "url": "/mine/static/media/features-split-image-03.87e4d053.png"
   },
   {
     "revision": "ce69286c9df18c104e45b4663c835369",
