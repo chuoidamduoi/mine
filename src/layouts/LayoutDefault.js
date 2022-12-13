@@ -11,7 +11,7 @@ const LayoutDefault = ({ children }) => (
       {children}
     </main>
     <Banner />
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 

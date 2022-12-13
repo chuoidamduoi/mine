@@ -50,6 +50,13 @@
     }
     .flex{
         display: flex;
+        .small-icon{
+            width: 30px;
+            margin: 0 !important;
+        }
+        p{
+            margin-left: 10px;
+        }
     }
 }
 .css-1pdunrm {
@@ -109,7 +116,7 @@
 
                 .split-item-content {
                     flex-shrink: 0;
-                    width: ($container--width-sm * 0.8) - $split-item-content--padding-h;
+                    width: ($container--width-sm * 0.6) - $split-item-content--padding-h;
                     margin-bottom: 0;
                     margin-right: $split-item--inner-padding-h;
                     margin-left: 30px;

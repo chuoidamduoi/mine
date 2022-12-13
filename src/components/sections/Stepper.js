@@ -161,7 +161,7 @@ const VerticalLinearStepper = (
     );
 
     const innerClasses = classNames(
-        'hero-inner section-inner',
+        'hero-inner ',
         topDivider && 'has-top-divider',
         bottomDivider && 'has-bottom-divider'
     );
@@ -174,7 +174,7 @@ const VerticalLinearStepper = (
         >
             <div className="container">
                 <div className={innerClasses}>
-                    <Box sx={{ maxWidth: "100%", backgroundColor: "#25282C" }}>
+                    <Box sx={{ maxWidth: "100%", backgroundColor: "#25282C", paddingTop:"40px" }}>
                         <h2> Work experience</h2>
 
                         <Stepper activeStep={activeTime} orientation="horizontal">

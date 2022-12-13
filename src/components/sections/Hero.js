@@ -72,7 +72,7 @@ const Hero = ({
           <div className={splitClasses}>
 
             <div className="split-item">
-              <div className={
+              {/* <div className={
                 classNames(
                   'split-item-image center-content-mobile reveal-from-bottom',
                   imageFill && 'split-item-image-fill'
@@ -83,7 +83,7 @@ const Hero = ({
                   alt="Features split 02"
                   width={200}
                   height={200} />
-              </div>
+              </div> */}
               <div className="split-item-content center-content-mobile reveal-from-right " data-reveal-container=".split-item">
                 <h3 className="mt-0 mb-12">
                   NGUYEN NGUYEN
@@ -94,18 +94,19 @@ const Hero = ({
                 <Box sx={{ flexGrow: 1 }}>
                   <Grid container spacing={2}>
                     <Grid item xs={6} className="flex">
-                      <MailOutlineOutlinedIcon />
+                      <MailOutlineOutlinedIcon className="small-icon" />
                       <p className="m-0"> 01/01/2001</p>
                     </Grid>
                     <Grid item xs={6} className="flex" >
-                      <PhoneAndroidIcon /> +84 098 678 345
+                      <PhoneAndroidIcon className="small-icon" /> 
+                      <p className="m-0"> +84 098 678 345</p>
                     </Grid>
                     <Grid item xs={6} className="flex">
-                      <LocationOnIcon />
+                      <LocationOnIcon className="small-icon" />
                       <p className="m-0"> District 1, HCMC </p>
                     </Grid>
                     <Grid item xs={6} className="flex">
-                      <CakeIcon />
+                      <CakeIcon className="small-icon"/>
                       <p className="m-0"> 2000</p>
                     </Grid>
                   </Grid>
@@ -114,7 +115,7 @@ const Hero = ({
               </div>
 
             </div>
-            <p>
+            <p style={{paddingTop:"20px"}}>
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.
             </p>

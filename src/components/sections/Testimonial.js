@@ -34,7 +34,7 @@ const Testimonial = ({
 
   const innerClasses = classNames(
     'testimonial-inner section-inner',
-    topDivider && 'has-top-divider',
+    // topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
 
@@ -44,8 +44,9 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Personal project',
+    paragraph:""
+    // paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
   };
 
   return (

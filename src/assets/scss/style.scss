@@ -6,9 +6,9 @@
 # Variables, functions and mixins
 --------------------------------------------------------------*/
 @import "core/abstracts/functions",
-		"settings/settings",
-        "core/abstracts/mixins",
-        'core/abstracts/include-media';
+"settings/settings",
+"core/abstracts/mixins",
+'core/abstracts/include-media';
 
 /*--------------------------------------------------------------
 # Normalize
@@ -126,3 +126,75 @@
 # Helpers
 --------------------------------------------------------------*/
 @import "core/base/helpers";
+
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
+.p-layout {
+	width: 100%;
+	display: flex;
+	position: relative;
+
+	.p-left {
+		width: 50%;
+	}
+
+	.p-right {
+		width: 50%;
+		height: 100vh;
+		position: fixed;
+		right: 0;
+		background-color: get-color(dark, 3);
+	}
+
+	.p-banner {
+		font-family: arial;
+		font-size: 24px;
+		margin: 25px;
+		width: 100%;
+		height: 100%;
+		/* Setup */
+		position: relative;
+	}
+
+	.p-centre {
+		width: 300px;
+		height: 400px;
+		// background-color: red;
+		/* Center vertically and horizontally */
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		margin: -150px 0 0 -150px;
+		/* Apply negative top and left margins to truly center the element */
+	}
+}
+
+@include media( '<=large' ) {
+	.p-layout {
+		width: 100%;	
+		
+		.p-left {
+			width: 100%;
+			z-index: 1;
+		}
+	
+		.p-right {
+			width: 100%;
+			background-color: get-color(dark, 3);
+			height: 80px;
+			position: fixed;
+			top: 0;
+			left:0;
+			z-index: 999;
+		}
+	
+		.p-banner {
+			display: none;
+		}
+	
+		.p-centre {
+			display: none;
+		}
+	}
+}

@@ -101,16 +101,16 @@
 			}
 		}
 
-		&:not(.invert-desktop) .split-item:nth-child(even),
-		&.invert-desktop .split-item:nth-child(odd) {
-			justify-content: flex-end;
+		// &:not(.invert-desktop) .split-item:nth-child(even),
+		// &.invert-desktop .split-item:nth-child(odd) {
+		// 	justify-content: flex-end;
 
-			.split-item-content {
-				order: 1;
-				margin-left: $split-item--inner-padding-h;
-				margin-right: 0;
-			}
-		}
+		// 	.split-item-content {
+		// 		order: 1;
+		// 		margin-left: $split-item--inner-padding-h;
+		// 		margin-right: 0;
+		// 	}
+		// }
 
 		&:not(.invert-desktop) .split-item:nth-child(odd),
 		&.invert-desktop .split-item:nth-child(even) {
